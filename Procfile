@@ -1,2 +1,3 @@
 release: python manage.py migrate
-web: gunicorn travel.wsgi --log-file -
+release: python manage.py loaddata data.json
+web: gunicorn homeless_pets.wsgi --log-file -

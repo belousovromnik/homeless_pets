@@ -20,8 +20,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'ms&v9v^f_@!*(w+@u^t!lqe-gdpypx4yu#c@wgr$*#dq4jwjw3'
 SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = 'ms&v9v^f_@!*(w+@u^t!lqe-gdpypx4yu#c@wgr$*#dq4jwjw3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -103,17 +103,17 @@ WSGI_APPLICATION = 'homeless_pets.wsgi.application'
 
 import dj_database_url
 DATABASES= {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
- 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'homeless_pets',
-#         'USER': 'postgres',
-#         'PASSWORD': 'postgres',
-#         'HOST': '127.0.0.1',
-#         'PORT': '5432',
-#     }
-# }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'homeless_pets',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
