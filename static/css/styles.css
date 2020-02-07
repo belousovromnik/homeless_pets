@@ -1,0 +1,112 @@
+body {
+    line-height: 1;
+    color: #333;
+    font: 12px Arial, Helvetica, Verdana, sans-serif;
+    padding-bottom: 10px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.container {
+    margin-top: 70px;
+    width: 970px;
+    max-width: 1200px;
+}
+
+.top_header {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: blue;
+}
+
+.bar_content {
+    margin: 0px auto;
+    width: 970px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 60px;
+    background-color: #dcdcdc;
+}
+
+.header-text {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.bar_button {
+    margin: 0px auto;
+    box-sizing: border-box;
+    height: 50px;
+    display: flex;
+    margin: 0;
+}
+
+.bar_content ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bar_content ul li {
+    width: 100px;
+}
+
+.main-content {
+    display: block;
+    margin: 0px auto;
+    width: 970px;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.center-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.figure_list {
+    width: 27%; /* Ширина */
+    float: left; /* Выстраиваем элементы по горизонтали */
+    margin: 0 0 0 4%; /* Отступ слева */
+    padding: 1%; /* Поля */
+}
+
+figure img {
+    max-height: 300px;
+    width: 100%; /* Ширина в процентах */
+    border-radius: 5px; /* Радиус скругления */
+    margin-bottom: 2%;
+}
+
+.figure_edit img {
+    max-height: 1000px;
+    height: 100%; /* Ширина в процентах */
+    width: 100%; /* Ширина в процентах */
+    border-radius: 5px; /* Радиус скругления */
+    margin-bottom: 2%;
+}
+
+.figure_edit .name_pet {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #417CD4;
+}
+
+.name_pet {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #417CD4;
+}

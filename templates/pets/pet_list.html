@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="main-content">
+    <div class="row">
+        {% for pet in object_list %}
+        <figure class="figure_list">
+            <a href="{% url 'petdetail' pet.id %}">
+                <img src="{{ pet.foto.url }}" alt="Центрируем изображение">
+            </a>
+            <figcaption class="name_pet">{{ pet.name }}</figcaption>
+            <p>{{ pet.kind.name }}</p>
+            <p>{{ pet.breed.name }}</p>
+        </figure>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="main-content">
+    <div class="col-lg-10">
+        <figure class="figure_edit">
+            <img src="{{ object.foto.url }}" alt="Центрируем изображение">
+            <figcaption class="name_pet">Кличка животного: {{ object.name }}</figcaption>
+            <p>{{ object.kind }}</p>
+            <p>{{ object.breed }}</p>
+        </figure>
+    </div>
+</div>
+{% endblock %}
