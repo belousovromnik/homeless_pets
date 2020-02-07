@@ -1,0 +1,27 @@
+
+
+1. settings.py
+
+# SECRET_KEY = 'ms&v9v^f_@!*(w+@u^t!lqe-gdpypx4yu#c@wgr$*#dq4jwjw3'
+SECRET_KEY = os.environ.get('SECRET_KEY')
+
+
+ALLOWED_HOSTS = ['pets-belrom.herokuapp.com']
+
+
+INSTALLED_APPS = + 
+'whitenoise.runserver_nostatic'
+
+
+MIDDLEWARE = +
+'whitenoise.middleware.WhiteNoiseMiddleware',
+
+
+DATABASES = 
+import dj_database_url
+DATABASES= {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
+
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
