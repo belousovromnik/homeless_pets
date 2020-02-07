@@ -38,9 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'whitenoise.runserver_nostatic'
     'pets',
 ]
+    # 'whitenoise.runserver_nostatic'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
